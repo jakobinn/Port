@@ -1,0 +1,42 @@
+extends layout
+
+block content
+	header.navbar
+		a.back-button(href='/') Back
+		span.name= item.name
+			a.link(href='')
+	div.menu(style= 'background-image: url("./../images/items/'+item.image+'");')
+
+	.section-container
+		.card.text-white.bg-dark.mb-3
+			.card-header
+				div
+					i.fa.fa-info.item-icon
+						span.sub-header-text About
+			.card-body
+				h5.card-title= item.category
+				p.card-text= item.description
+
+		.card.text-white.bg-dark.mb-3
+			.card-header
+				div
+					i.fa.fa-wrench.item-icon
+						span.sub-header-text Technology
+			.card-body
+				.tech-container
+					each val in item.technology
+						a.technology-item.tech-color= val
+
+		.icon-container
+			if item.source == null
+				i.fa.fa-github.item-link-icon.disabled
+			else
+				a(href=item.source, target='_blank')
+					i.fa.fa-github.item-link-icon.big-effect
+			if item.demo == null
+				i.fa.fa-play-circle.item-link-icon.disabled
+			else
+				a(href= item.demo, target='_blank')
+					i.fa.fa-play-circle.item-link-icon.big-effect
+
+

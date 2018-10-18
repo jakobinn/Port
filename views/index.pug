@@ -1,0 +1,51 @@
+extends layout
+
+block content
+	header.navbar
+		span.name
+			a.link(href='') Jakob
+	div.menu(style='background-image: url("images/cover-photo.png");')
+	.container
+		ul#filters.clearfix
+			li
+				span.filter.active(data-filter='.app, .website, .game, .document, .extension') All
+			li
+				span.filter(data-filter='.app') Apps
+			li
+				span.filter(data-filter='.website') Websites
+			li
+				span.filter(data-filter='.game') Games
+			li
+				span.filter(data-filter='.extension') Browser Extensions
+			li
+				span.filter(data-filter='.document') Documents
+
+		#portfoliolist
+			each item in items
+				a(href='item/'+item.id)
+					.portfolio(data-cat= item.type, class= item.type)
+						.portfolio-wrapper
+							img(src= 'images/items/'+item.image, alt= item.alt class='img-small')
+							.label
+								.label-text
+									span.text-title(href='item')= item.name
+									span.text-category= item.category
+								.label-bg
+
+	footer.footer
+		.footer-container
+			h2.footer-heading About the website
+			hr.linebr
+			p.footer-text
+				| The website was created to exhibit some projects I have created. I used NodeJS Express Framework and the Pug template engine to build it which is ideal for re-using code and removing code redundancy. Jquery is used for animation. The website is designed to be simplistic and easy to use.
+			h2.footer-heading Contact
+			hr.linebr
+			.social-container
+				a(href='mailto:jobbi1991@gmail.com')
+					i.fa.fa-envelope.social-roll.soc-icon.big-effect
+				a(href='https://www.github.com/jakobinn')
+					i.fa.fa-github.social-roll.soc-icon.big-effect
+				a(href='https://www.linkedin.com/in/jakobinn/')
+					i.fa.fa-linkedin-square.social-roll.soc-icon.big-effect
+			p.footer-text.center.copyright-text
+				| &copy; Copyright 2018 Jakob M&aacute;r - Design & Programming
