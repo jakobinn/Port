@@ -7,7 +7,7 @@
 $(function () {
 	var filterList = {
 		init: function () {
-			$('#portfoliolist').mixItUp({
+			$('#portitems').mixItUp({
 				selectors: {
 			  target: '.portfolio',
 			  filter: '.filter'
