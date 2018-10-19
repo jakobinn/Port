@@ -272,7 +272,7 @@ body {
 
 
 
-#portfoliolist .portfolio {
+#portitems .portfolio {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -420,7 +420,7 @@ body {
         width: 95%;
     }
 
-    #portfoliolist .portfolio {
+    #portitems .portfolio {
         width: 48%;
         margin: 1%;
     }
