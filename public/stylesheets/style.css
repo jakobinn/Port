@@ -4,7 +4,7 @@ h5 {
     margin: 0;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ body {
     cursor: default;
 }
 
-.back-button {
+.back-button, .back-button:hover {
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -244,6 +244,10 @@ body {
     color: white;
 }
 
+.link:hover {
+    color: white;
+}
+
 /*Filters*/
 
 #filters {
@@ -269,8 +273,6 @@ body {
     color: #fff;
     border-radius: 50px;
 }
-
-
 
 #portitems .portfolio {
     -webkit-box-sizing: border-box;
