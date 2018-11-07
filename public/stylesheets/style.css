@@ -117,8 +117,7 @@ body {
 }
 
 .social-container {
-    max-width: 300px;
-    width: 30%;
+    max-width: 200px;
     display: flex;
     justify-content: space-between;
 }
@@ -427,21 +426,12 @@ body {
         margin: 1%;
     }
 
-    #ads {
-        display: none;
-    }
-
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
         width: 70%;
     }
-
-    #ads {
-        display: none;
-    }
-
 }
 
 @media screen and (max-width: 600px) {

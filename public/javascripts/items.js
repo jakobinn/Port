@@ -117,7 +117,7 @@ module.exports = {
         alt: 'chat bubbles',
         source: null,
         screenshots: [],
-        image: 'chatonline.jpeg',
+        image: 'chatonline.png',
         demo: null,
     },
     'eventChat': {
@@ -138,7 +138,7 @@ module.exports = {
         id: 'httpsecurity',
         type: 'extension',
         technology: ['Browser Extension Tech', 'HTML', 'CSS', 'Javascript', 'Jquery', 'DOMPurify'],
-        name: 'HTTP Security Analyser',
+        name: 'HTTP Security',
         category: 'Browser Extension',
         alt: 'HTTP security hardening',
         description: `A browser extension that can monitor and catpure HTTP response headers from websites and attach 
