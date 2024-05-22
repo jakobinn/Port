@@ -142,7 +142,7 @@ module.exports = {
         category: 'Browser Extension',
         alt: 'HTTP security hardening',
         description: `A browser extension that can monitor and catpure HTTP response headers from websites and attach 
-  		educational information about how to improve the security of those HTTP response headers. Can be released in November.`,
+  		educational information about how to improve the security of those HTTP response headers.`,
         image: 'httpsecurity.jpg',
         source: null,
         demo: null,
